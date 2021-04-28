@@ -1,0 +1,81 @@
+@use '../styles/general/colors' as *; /* this enables the usage of all variables and mixins from the general folder */
+
+body {
+  background-color: rgb(196, 196, 226);
+}
+
+.menu {
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__link {
+  display: block;
+  padding: 0.5rem 2rem;
+  color: rgb(14 14 14);
+  text-decoration: none;
+}
+.menu__link:hover,
+.menu__link.--active {
+  color: rgb(173 31 31);
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #ebebeb;
+  margin: 0 0 1rem 0;
+  min-width: 300px;
+  justify-items: center;
+}
+
+.menu__item {
+  display: block;
+}
+
+.color {
+  &__wrapper {
+    display: flex;
+  }
+  &__hex {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    color: #ffffff;
+    background-color: $primaryBlue-light;
+    border: solid 0px;
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+
+  &__hex--second {
+    background-color: $primaryBlue-dark;
+  }
+  &__hex--gradient {
+    background: $primaryGradiant;
+  }
+
+  &__primary {
+    margin-right: 15px;
+  }
+  &__scss-name {
+    width: 196px;
+    height: 20px;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+  }
+  &__scss-name--x2 {
+    height: 40px;
+  }
+}
