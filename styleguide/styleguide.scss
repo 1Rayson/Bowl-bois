@@ -51,17 +51,17 @@ body {
     width: 200px;
     height: 100px;
     color: #ffffff;
-    background-color: $primaryBlue-light;
+    background-color: $primary_blue-light;
     border: solid 0px;
     border-radius: 10px;
     margin: 10px 0px;
   }
 
   &__hex--second {
-    background-color: $primaryBlue-dark;
+    background-color: $primary_blue-dark;
   }
   &__hex--gradient {
-    background: $primaryGradiant;
+    background: $primary_gradiant;
   }
 
   &__primary {
