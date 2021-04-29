@@ -21,3 +21,9 @@ body {
   font-weight: regular;
   color: blue;
 }
+.locations__information {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}

@@ -1,3 +1,6 @@
+//@use '../styles/general/fonts' as *;
+//@use '../styles/general/colors' as *; viker ikke
+
 body {
   margin: 0;
   padding: 0;
@@ -19,5 +22,11 @@ body {
     text-align: center;
     font-weight: regular;
     color: blue;
+  }
+  &__information {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
   }
 }
