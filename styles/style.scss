@@ -1,1 +1,11 @@
-@use 'modules' as *;
+@use '../styles/general/fonts' as *;
+@use '../styles/general/colors' as *;
+
+body {
+  background: $primary_gradiant;
+  font-family: $primary_font;
+}
+
+.test {
+  font-size: 3rem;
+}
