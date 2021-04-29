@@ -50,18 +50,35 @@ body {
   width: 200px;
   height: 100px;
   color: #ffffff;
-  background-color: #0f89be;
   border: solid 0px;
   border-radius: 10px;
   margin: 10px 0px;
 }
-.color__hex--second {
+.color__hex--light-blue {
+  background-color: #0f89be;
+}
+.color__hex--dark-blue {
   background-color: #0f445b;
 }
-.color__hex--gradient {
+.color__hex--blue-gradient {
   background: radial-gradient(circle, #0f89be 0%, #0f4962 86%, #0f445b 100%);
 }
+.color__hex--red {
+  background: #ff0000;
+}
+.color__hex--yellow {
+  background: #fff831;
+}
+.color__hex--dark-grey {
+  background: #707070;
+}
 .color__primary {
+  margin-right: 15px;
+}
+.color__gradients {
+  margin-right: 15px;
+}
+.color__secondary {
   margin-right: 15px;
 }
 .color__scss-name {
