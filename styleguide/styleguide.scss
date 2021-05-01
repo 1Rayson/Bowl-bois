@@ -1,57 +1,74 @@
 @use '../styles/general/colors' as *; /* this enables the usage of all variables and mixins from the general folder */
-
+@use '../styles/general/fonts' as *;
 body {
-  background-color: rgb(196, 196, 226);
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  background-color: #ebebeb;
+  font-family: $primary_font;
 }
 
 .menu {
-  text-align: right;
+  width: 70%;
   display: flex;
-  justify-content: flex-start;
+  position: fixed;
+  top: 0;
 }
 
 .menu__link {
+  font-size: 1.1rem;
   display: block;
   padding: 0.5rem 2rem;
-  color: rgb(14 14 14);
+  color: #3a3b3c;
   text-decoration: none;
 }
 .menu__link:hover,
 .menu__link.--active {
-  color: rgb(173 31 31);
+  color: #0f89be;
   font-weight: bold;
   top: 0;
   left: 0;
 }
 
 .menu__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   width: 100vw;
   padding: 1rem 2rem;
-  background-color: #ebebeb;
+  background-color: #3a3b3c;
   margin: 0 0 1rem 0;
   min-width: 300px;
-  justify-items: center;
 }
 
 .menu__item {
   display: block;
 }
 
+.menu__item a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .color {
+  padding: 88px 0rem 32px 32px;
+  background-color: #ffffff;
+  &__title {
+    font-size: 1.2rem;
+    color: #3a3b3c;
+    margin-bottom: 0.2rem;
+  }
   &__wrapper {
     display: flex;
   }
   &__hex {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100%;
     height: 100px;
     color: #ffffff;
-    border: solid 0px;
+    border: solid 1px;
     border-radius: 10px;
     margin: 10px 0px;
   }
@@ -60,6 +77,9 @@ body {
   }
   &__hex--dark-blue {
     background-color: $primary_blue-dark;
+  }
+  &__hex--font {
+    background-color: #116f99;
   }
   &__hex--blue-gradient {
     background: $primary_gradient;
@@ -73,24 +93,20 @@ body {
   &__hex--dark-grey {
     background: $secondary__grey;
   }
-  &__primary {
+  &__information {
+    display: flex;
+    flex-direction: column;
     margin-right: 15px;
-  }
-  &__gradients {
-    margin-right: 15px;
-  }
-  &__secondary {
-    margin-right: 15px;
+    padding-bottom: 1.5rem;
+    width: 200px;
+    height: inherit;
   }
   &__scss-name {
-    width: 196px;
-    height: 20px;
+    width: 100%;
+    font-size: 1rem;
     text-align: center;
     border: solid 1px darkgray;
     border-radius: 10px;
     color: #000000;
-  }
-  &__scss-name--x2 {
-    height: 40px;
   }
 }

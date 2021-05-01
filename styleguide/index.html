@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design system example</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&display=swap"
-    />
+    <link rel="stylesheet" href="https://use.typekit.net/get3xwa.css" />
     <link rel="stylesheet" href="styleguide.css" />
   </head>
   <body>
@@ -19,7 +16,13 @@
             <a href="#colors" class="menu__link">Colors</a>
           </li>
           <li class="menu__item">
+            <a href="#typography" class="menu__link">Typography</a>
+          </li>
+          <li class="menu__item">
             <a href="#buttons" class="menu__link">Buttons</a>
+          </li>
+          <li class="menu__item">
+            <a href="#icons" class="menu__link">Icons</a>
           </li>
         </ul>
       </nav>
@@ -28,41 +31,47 @@
     <section class="color" id="colors">
       <h2 class="color__title">Primary Colors</h2>
       <div class="color__wrapper">
-        <article class="color__primary">
+        <article class="color__information">
           <h3 class="color__hex color__hex--light-blue">#0F89BE</h3>
           <aside class="color__scss-name">$primaryBlue-light</aside>
         </article>
-        <article class="color__primary">
+        <article class="color__information">
           <h3 class="color__hex color__hex--dark-blue">#0f445b</h3>
           <aside class="color__scss-name">$primaryBlue-dark</aside>
+        </article>
+        <article class="color__information">
+          <h3 class="color__hex color__hex--font">#116f99</h3>
+          <aside class="color__scss-name">$primary_font-color</aside>
         </article>
       </div>
       <h2 class="color__title">Gradients</h2>
       <div class="color__wrapper">
-        <article class="color__gradients">
+        <article class="color__information">
           <h3 class="color__hex color__hex--blue-gradient">#0f445b + #0f89be</h3>
-          <aside class="color__scss-name color__scss-name--x2">$primaryBlue-dark $primaryBlue-light</aside>
+          <aside class="color__scss-name">
+            $primaryBlue-dark <br />
+            $primaryBlue-light
+          </aside>
         </article>
       </div>
       <h2 class="color__title">Secondary Colors</h2>
       <div class="color__wrapper">
-        <article class="color__secondary">
+        <article class="color__information">
           <h3 class="color__hex color__hex--red">#ff0000</h3>
           <aside class="color__scss-name">$secondary_red</aside>
         </article>
-        <article class="color__secondary">
+        <article class="color__information">
           <h3 class="color__hex color__hex--yellow">fff831</h3>
           <aside class="color__scss-name">$secondary_yellow</aside>
         </article>
-        <article class="color__secondary">
+        <article class="color__information">
           <h3 class="color__hex color__hex--dark-grey">#707070</h3>
           <aside class="color__scss-name">$secondary_grey</aside>
         </article>
       </div>
     </section>
-    <section class="module" id="buttons">
-      <h2 class="title">Buttons</h2>
-      <section class="module__error"></section>
+    <section class="typography" id="typography">
+      <h2 class="title">Typography</h2>
     </section>
   </body>
 </html>
