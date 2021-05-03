@@ -17,6 +17,8 @@ header {
   margin-bottom: 6.5rem;
 }
 
+// Menu that links to different section in the styleguide
+
 .menu {
   width: 70%;
   display: flex;
@@ -60,16 +62,16 @@ header {
   font-weight: 600;
 }
 
-// Color palette section styling
+//Styleguide: Color palette section styling
 
 .color {
-  padding: 10px 0rem 20px 32px;
+  padding: 44px 0px 20px 32px;
   background-color: #ffffff;
   border-radius: 10px;
   &__heading {
     font-size: 2rem;
     color: $primary_font-color;
-    margin-bottom: 0;
+    margin: 0;
     line-height: 1.2;
   }
   &__description {
@@ -135,17 +137,17 @@ header {
   }
 }
 
-//typography section styling
+//Styleguide: Typography section styling
 
 .typography {
   margin-top: 30px;
-  padding: 10px 32px 20px 32px;
+  padding: 44px 32px 44px 32px;
   background-color: #ffffff;
   border-radius: 10px;
   &__heading {
     font-size: 2rem;
     color: $primary_font-color;
-    margin-bottom: 0;
+    margin: 0;
     line-height: 1.2;
   }
   &__description {
@@ -193,5 +195,64 @@ header {
     border: solid 1px #3a3b3c;
     border-radius: 5px;
     padding: 5px;
+  }
+}
+
+//Styleguide: Typography with different background
+
+.typography {
+  &__gradient-background {
+    background: $primary_gradient;
+  }
+  &__heading--color {
+    color: #ffffff;
+  }
+  &__description--color {
+    color: #ffffff;
+  }
+  &__fonts--color {
+    color: lightgrey;
+  }
+  &__title--color {
+    color: lightgrey;
+  }
+  &__text--color {
+    color: #ffffff;
+  }
+  &__size-info--color {
+    color: #ffffff;
+    border: solid 1px #ffffff;
+  }
+}
+
+//Styleguide: icons section
+
+.icons {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+  }
+  &__information {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon-svg {
+    width: 60px;
+    justify-self: center;
+  }
+  &__file-path {
+    
   }
 }
