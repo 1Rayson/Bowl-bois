@@ -1,5 +1,6 @@
 @use '../styles/general/fonts' as *;
 @use '../styles/general/colors' as *;
+@use '../styles/modules' as *;
 
 body {
   background: $secondary_yellow;
