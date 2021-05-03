@@ -1,6 +1,6 @@
 @use '../styles/general/fonts' as *;
 @use '../styles/general/colors' as *;
-@use '../styles/modules/fejlmelding/fejlmelding.scss' as*;
+@use '../styles/modules' as *;
 
 body {
   background: $secondary_yellow;
