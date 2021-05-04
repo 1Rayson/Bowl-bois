@@ -249,11 +249,25 @@ header {
     height: auto;
     display: flex;
     flex-direction: column;
+    padding-right: 20px;
+    align-items: center;
+  }
+  &__wrapper {
+    display: flex;
   }
   &__icon-svg {
     width: 60px;
-    justify-self: center;
   }
   &__file-path {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  &__report-svg {
+    width: 60px;
   }
 }

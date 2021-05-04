@@ -1,0 +1,10 @@
+@use '../../../styles/general/colors' as *;
+@use '../../../styles/general/fonts' as *;
+
+body {
+  font-family: $primary_font;
+  margin: 0;
+  padding: 0;
+}
+
+

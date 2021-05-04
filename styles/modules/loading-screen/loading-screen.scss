@@ -1,0 +1,47 @@
+@use '../../../styles/general/colors' as *;
+@use '../../../styles/general/fonts' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 35%;
+  width: 100%;
+  border-radius: 180px;
+  bottom: 0%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: $primary_gradient;
+  z-index: -1;
+}
+
+.random-fact {
+  width: 90%;
+  padding-top: 10%;
+  margin: auto;
+}
+
+h1 {
+  font-family: $primary_font;
+  font-size: 2rem;
+  color: $primary_font-color;
+  margin: 0;
+}
+
+.insertFact {
+  font-size: 1.3rem;
+  font-family: $primary_font;
+}
+
+.mascot {
+  width: 40%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
