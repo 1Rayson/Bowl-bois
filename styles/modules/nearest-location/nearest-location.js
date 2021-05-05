@@ -12,6 +12,7 @@
       locations.addEventListener('scroll', function(event)
         {
             let locations = event.target;
+            console.log(locations.scrollHeight - locations.scrollTop === locations.clientHeight);
             if (locations.scrollHeight - locations.scrollTop === locations.clientHeight)
             {
                 console.log('scrolled to bottom');

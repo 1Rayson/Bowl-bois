@@ -1,12 +1,3 @@
 @use '../styles/general/fonts' as *;
 @use '../styles/general/colors' as *;
 @use '../styles/modules' as *;
-
-body {
-  background: $secondary_yellow;
-  font-family: $primary_font;
-}
-
-.test {
-  font-size: 3rem;
-}
