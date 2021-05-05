@@ -1,5 +1,6 @@
 @use '../styles/general/colors' as *; /* this enables the usage of all variables and mixins from the general folder */
 @use '../styles/general/fonts' as *;
+@use '../styles/modules/' as *;
 
 html {
   scroll-behavior: smooth;
@@ -269,5 +270,25 @@ header {
   }
   &__report-svg {
     width: 60px;
+  }
+}
+
+// Styleguide: Modules section
+
+.modules {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
   }
 }

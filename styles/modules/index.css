@@ -23,6 +23,9 @@ body {
   height: 100px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
+.locations__bottom-fade.--hide {
+  display: none;
+}
 .locations__title {
   font-size: 22px;
   text-align: center;

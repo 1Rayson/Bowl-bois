@@ -23,18 +23,16 @@ footer {
   width: 90%;
   padding-top: 10%;
   margin: auto;
-}
-
-h1 {
-  font-family: $primary_font;
-  font-size: 2rem;
-  color: $primary_font-color;
-  margin: 0;
-}
-
-.insertFact {
-  font-size: 1.3rem;
-  font-family: $primary_font;
+  &__title {
+    font-family: $primary_font;
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+  }
+  &__content {
+    font-size: 1.3rem;
+    font-family: $primary_font;
+  }
 }
 
 .mascot {
