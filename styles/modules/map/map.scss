@@ -1,0 +1,37 @@
+@use '../../../styles/general/colors' as *;
+@use '../../../styles/general/fonts' as *;
+
+h1 {
+  font-family: $primary_font;
+  color: white;
+  font-size: 1rem;
+  grid-column: 1;
+}
+
+h2 {
+  font-family: $primary_font;
+  color: white;
+  font-size: 1rem;
+  grid-column: 2;
+}
+
+h3 {
+  font-family: $primary_font;
+  color: #99b9c7;
+  font-size: 0.7rem;
+  margin-top: -20px;
+}
+.vejledning {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: absolute;
+  background: $primary_gradient;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  height: 80px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+}

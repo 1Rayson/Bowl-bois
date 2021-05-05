@@ -12,5 +12,5 @@ function randomFact(){
     })
 }; 
 
-// Pop up notifications that asks the user premission to use location data.
+
 

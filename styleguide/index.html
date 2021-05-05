@@ -7,7 +7,6 @@
     <title>Design system example</title>
     <link rel="stylesheet" href="https://use.typekit.net/get3xwa.css" />
     <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -26,7 +25,7 @@
             <a href="#icons" class="menu__link">Icons</a>
           </li>
           <li class="menu__item">
-            <a href="#modules" class="menu__link">Modules</a>
+            <a href="#buttons" class="menu__link">Buttons</a>
           </li>
         </ul>
       </nav>
@@ -190,14 +189,34 @@
     <!--
       Styleguide: Modules section
     -->
-    <section class="modules" id="modules">
-      <h1 class="modules__heading">Modules</h1>
-      <p class="modules__description">
+    <section class="buttons" id="buttons">
+      <h1 class="buttons__heading">Buttons</h1>
+      <p class="buttons__description">
         Here you see a collection of the modules used to build up our app, as displayed in our
         styleguide and /styles/modules
       </p>
-      <div class="wrapper">
-        <article class="modules__display"></article>
+        <a href="#" class="buttons__location--link">
+        <div class="buttons__wrapper">
+        <section class="buttons__location--flex">
+        <article class="buttons__location">
+          <h2 class="buttons__location--adress">Kongevej, 69</h2>
+          <aside class="buttons__location--distance-and-payment">
+            <img
+              class="buttons__location--coin-icon"
+              src="/assets/icons/coin.svg"
+              alt="A coin icon showing that you have to pay to use the public bathroom"
+            />
+            <h2 class="buttons__location--distance">8,09 km</h2>
+        </article>
+        <aside class="buttons__location-use">Button directs you to next page</aside>
+      </section>
+      </a>
+      <article class="buttons__send">
+        <a href="#">
+          <button class="buttons__send--style">Send</button>
+        </a>
+        <aside class="buttons__send-use">Sends the formular you have written</aside>
+      </article>
       </div>
     </section>
   </body>

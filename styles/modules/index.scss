@@ -1,2 +1,5 @@
-@forward 'nearest-location/nearest-locations';
-@forward 'fejlmelding/fejlmelding'; 
+@forward '../modules/rapporter-problem/rapporter-problem';
+@forward '../modules/fejlmelding/fejlmelding';
+@forward '../modules/map/map';
+@forward '../modules/nearest-location/nearest-locations';
+@forward '../modules/loading-screen/loading-screen';
