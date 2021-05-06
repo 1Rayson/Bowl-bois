@@ -1,7 +1,7 @@
 @use '../../../styles/general/colors' as *;
 @use '../../../styles/general/fonts' as *;
 
-body {
+.fejlmelding__body {
   margin: 0;
   padding: 0;
   background: $primary_gradient;
@@ -9,11 +9,10 @@ body {
 }
 
 // fejlmeldings page
-.title{
-  color:#ffffff;
-  text-shadow: 2px 0.5px black;
+.title {
+  color: #ffffff;
   text-align: center;
-  font-weight: lighter;
+  font-size: 2rem;
 }
 
 .locations {
@@ -51,16 +50,15 @@ body {
   &__adress {
     font-size: 20px;
     color: $primary_font-color;
-    font-weight: 100;
+    font-weight: 300;
     padding-right: 2.5rem;
     margin-bottom: 0.3rem;
   }
   &__distance-and-payment {
     display: flex;
   }
-  &__coin-icon {
-    padding-right: 10px;
-    width: 1.5rem;
+  &__report-icon {
+    width: 50px;
   }
   &__distance {
     font-size: 20px;

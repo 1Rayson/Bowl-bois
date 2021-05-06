@@ -4,9 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design system example</title>
+    <title>Loo Looker</title>
     <link rel="stylesheet" href="https://use.typekit.net/get3xwa.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script>
+      setTimeout(function () {
+        location = "/styles/modules/nearest-location/nearest-location.html";
+      }, 10000); // Change this value to number of milliseconds to wait. 1000 = 1s
+    </script>
   </head>
-  <body></body>
+  <body>
+    <body class="loading-screen__body">
+      <section class="random-fact">
+        <h1 class="random-fact__title">Did you know?</h1>
+        <p class="random-fact__content"></p>
+      </section>
+
+      <footer>
+        <img class="mascot" src="/assets/images/toilet-maskot.svg" alt="Picture of toilet-maskot" />
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </body>
 </html>

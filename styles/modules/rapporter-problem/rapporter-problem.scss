@@ -1,79 +1,70 @@
 @use '../../../styles/general/colors' as *;
 @use '../../../styles/general/fonts' as *;
 
-body {
+.rapporter-problem__body {
   padding: 0;
   margin: 0;
   font-family: $primary_font;
   background: $primary_gradient;
 }
 
-.inputformular {
+.input-formular {
   text-align: center;
-}
-
-article {
-  max-width: 370px;
-  margin: 0 auto;
-  z-index: -1;
-}
-
-h1 {
-  position: relative;
-  color: white;
-  text-align: center;
-}
-
-h2 {
-  position: relative;
-  margin-top: 30px;
-  font-size: 1.2rem;
-  color: white;
-  text-align: left;
-  margin-left: 50px;
-}
-
-input {
-  border-radius: 20px;
-  height: 30px;
-  width: 300px;
-}
-
-textarea {
-  border-radius: 20px;
-  width: 300px;
-  height: 300px;
-}
-
-.sendbtn {
-  position: sticky;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  height: 50px;
-  background: $primary_gradient;
-  border: none;
-  box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 1);
-  border-radius: 20px;
-  z-index: 100;
-}
-
-h4 {
-  font-family: $primary_font;
-  font-size: 1rem;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-.returnbtn {
-  margin-right: 90%;
-  background-color: transparent;
-  border: none;
-}
-
-img {
-  width: 50px;
-  padding: 0;
-  margin: 0;
+  &__wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  &__container {
+    max-width: 350px;
+  }
+  &__title {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  &__info-title {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    position: relative;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 25px;
+  }
+  &__send-btn {
+    position: relative;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $primary_font;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 5px 20px;
+    background: $primary_gradient;
+    border: solid 0px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 1);
+  }
+  &__return-btn {
+    margin-right: 90%;
+    background-color: transparent;
+    border: none;
+  }
+  &__img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  &__input {
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+  }
+  &__text-area {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+  }
 }

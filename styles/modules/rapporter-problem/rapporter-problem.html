@@ -7,30 +7,33 @@
     <title>Rapporter problem</title>
     <link rel="stylesheet" href="rapporter-problem.css" />
   </head>
-  <body>
-    <section class="inputformular">
-      <article>
-        <button class="returnbtn">
-          <img
-            src="/assets/icons/returnbtn.svg"
-            alt="An arrow button that links to previous page"
-          />
+  <body class="rapporter-problem__body">
+    <section class="input-formular">
+      <article class="input-formular__wrapper">
+        <button class="input-formular__return-btn">
+          <a href="/styles/modules/fejlmelding/fejlmelding.html">
+            <img
+              class="input-formular__img"
+              src="/assets/icons/returnbtn.svg"
+              alt="An arrow button that links to previous page"
+            />
+          </a>
         </button>
-        <h1 class="rapporter_problem">Rapporter problem</h1>
-        <h2>Skriver til:</h2>
-        <input type="E-mail" />
+        <article class="input-formular__container">
+          <h1 class="input-formular__title">Rapporter problem</h1>
+          <h2 class="input-formular__info-title">Skriver til:</h2>
+          <input class="input-formular__input" type="E-mail" />
 
-        <h2>Emne:</h2>
+          <h2 class="input-formular__info-title">Emne:</h2>
 
-        <input type="Emne" />
+          <input class="input-formular__input" type="Emne" />
 
-        <h2>Beskriv problemet</h2>
+          <h2 class="input-formular__info-title">Beskriv problemet</h2>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea class="input-formular__text-area" name="" id="" cols="30" rows="10"></textarea>
 
-        <button class="sendbtn">
-          <h4>Send</h4>
-        </button>
+          <button class="input-formular__send-btn">Send</button>
+        </article>
       </article>
     </section>
   </body>

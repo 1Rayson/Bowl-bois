@@ -1,7 +1,7 @@
 @use '../../../styles/general/colors' as *;
 @use '../../../styles/general/fonts' as *;
 
-body {
+.loading-screen__body {
   margin: 0;
   padding: 0;
 }
@@ -23,7 +23,6 @@ footer {
   width: 90%;
   padding-top: 10%;
   margin: auto;
-<<<<<<< Updated upstream
   &__title {
     font-family: $primary_font;
     font-size: 2rem;
@@ -33,21 +32,8 @@ footer {
   &__content {
     font-size: 1.3rem;
     font-family: $primary_font;
+    margin: 20px 0px;
   }
-=======
-}
-
-h1 {
-  font-family: $primary_font;
-  font-size: 5rem;
-  color: $primary_font-color;
-  margin: 0;
-}
-
-.insertFact {
-  font-size: 1.3rem;
-  font-family: $primary_font;
->>>>>>> Stashed changes
 }
 
 .mascot {
