@@ -1,5 +1,11 @@
 @use '../../../styles/general/colors' as *;
 @use '../../../styles/general/fonts' as *;
+@use '../../../styles/general/reset.scss' as *;
+
+.map {
+  height: 80vh;
+  width: 100%;
+}
 
 h1 {
   font-family: $primary_font;
