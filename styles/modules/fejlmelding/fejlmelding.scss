@@ -4,11 +4,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: $primary_blue_dark;
+  background: $primary_gradient;
   font-family: $primary_font;
 }
 
-// Nearest location module
+// fejlmeldings page
 .locations {
   position: absolute;
   bottom: 0;
