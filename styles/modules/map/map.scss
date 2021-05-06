@@ -2,42 +2,51 @@
 @use '../../../styles/general/fonts' as *;
 @use '../../../styles/general/reset.scss' as *;
 
-.map {
-  height: 80vh;
-  width: 100%;
+body {
+  background-image: url(/assets/images/google-maps.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h1 {
-  font-family: $primary_font;
-  color: white;
-  font-size: 1rem;
-  grid-column: 1;
-}
-
-h2 {
-  font-family: $primary_font;
-  color: white;
-  font-size: 1rem;
-  grid-column: 2;
-}
-
-h3 {
-  font-family: $primary_font;
-  color: #99b9c7;
-  font-size: 0.7rem;
-  margin-top: -20px;
-}
-.vejledning {
-  grid-template-columns: 1fr 1fr;
-  display: grid;
+.report-icon {
   position: absolute;
-  background: $primary_gradient;
-  border-radius: 20px;
-  border: none;
-  width: 300px;
-  height: 80px;
+  top: 3%;
+  right: 3%;
+  width: 65px;
+}
+
+.rute-vejledning {
+  width: 95%;
+  height: 100px;
+  position: absolute;
+  bottom: 1%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 10%;
+  transform: translate(-50%, 0);
+  background: $primary_gradient;
+  border: solid 0px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    padding: 0px 30px;
+  }
+  &__gade {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: 8px;
+  }
+  &__retning {
+    font-size: 1.25rem;
+    color: #ebebeb;
+  }
+  &__afstand {
+    padding: 0px 30px;
+  }
+  &__km {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
 }

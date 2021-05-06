@@ -6,6 +6,19 @@ body {
   padding: 0;
   background-color: $primary_blue_dark;
   font-family: $primary_font;
+  background-image: url(/assets/images/google-maps.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Report icon styling
+.report-icon {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 65px;
 }
 
 // Nearest location module
